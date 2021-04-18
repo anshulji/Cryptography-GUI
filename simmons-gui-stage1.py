@@ -19,7 +19,7 @@ a = Label(root, text = 'Plain-text =>')
 a.grid()
 
 
-def simmons(each):
+def atbash(each):
 	# print(each)
 	temp_string=""
 	for val in each : 
@@ -41,7 +41,7 @@ count = 0
 def clicked():
 	global count
 	if (count%2)==0 :
-		result.configure(text = simmons(inp.get()))
+		result.configure(text = atbash(inp.get()))
 		btn.configure(text = 'decrypt!')
 	else :
 		result.configure(text = inp.get())
@@ -79,7 +79,7 @@ C = Canvas(root, background ="yellow",
 C.place(x=100,y=100)
 
 
-sim = Label(root,text='simmons experiment',bg='yellow')
+sim = Label(root,text='Atbash experiment',bg='yellow')
 sim.place(x=180,y=100)
 
 encrypt = Label(root, text = 'Cipher Text!   ==>> ')
